@@ -7,11 +7,14 @@ class App extends Component {
 
     super(props)
 
-    this._animationInterval = 25
+    this._animationInterval = 15
     this.animate = Function
 
     this.state = {
-      words: ["One", "thing", "have", "I", "asked", "of", "the", "Lord,", "that", "will", "I", "seek", "after:", "that", "I", "may", "dwell", "in", "the", "house", "of", "the", "Lord", "all", "the", "days", "of", "my", "life,", "to", "gaze", "upon", "the", "beauty", "of", "the", "Lord", "and", "to", "inquire", "in", "his", "temple."],
+      // words: ["One", "thing", "have", "I", "asked", "of", "the", "Lord,", "that", "will", "I", "seek", "after:", "that", "I", "may", "dwell", "in", "the", "house", "of", "the", "Lord", "all", "the", "days", "of", "my", "life,", "to", "gaze", "upon", "the", "beauty", "of", "the", "Lord", "and", "to", "inquire", "in", "his", "temple."],
+      words: ["What", "a", "piece", "of", "work", "is", "a", "man!", "How", "noble", "in", "reason!", "how", "infinite", "in", "faculty!", "in", "form,", "in", "moving,", "how", "express", "and", "admirable!", "in", "action", "how", "like", "an", "angel!", "in", "apprehension", "how", "like", "a", "god!", "the", "beauty", "of", "the", "world!", "the", "paragon", "of", "animals!", "And", "yet,", "to", "me,", "what", "is", "this", "quintessence", "of", "dust?"],
+      // words: ["Doubt", "thou", "the", "stars", "are", "fire;", "Doubt", "that", "the", "sun", "doth", "move;", "Doubt", "truth", "to", "be", "a", "liar;", "But", "never", "doubt", "I", "love."],
+      // words: ["Though", "this", "be", "madness", "yet", "there", "is", "method", "in't."],
       fixedActivatedIndexes: [],
       tempActivatedIndex: null,
     }
@@ -86,7 +89,7 @@ class App extends Component {
 
   style2(index) {
 
-    const transition = `all ${Math.pow(this._animationInterval, 2)}ms linear`
+    const transition = `all ${Math.pow(this._animationInterval, 2.5)}ms linear`
 
 
     return {
